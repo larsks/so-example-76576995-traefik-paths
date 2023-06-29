@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hermes
+  labels:
+    component: hermes
+spec:
+  template:
+    metadata:
+      labels:
+        component: hermes
+    spec:
+      containers:
+        - name: hermes
+          image: docker.io/traefik/whoami:latest
+          env:
+            - name: WHOAMI_PORT_NUMBER
+              value: "8000"
+          ports:
+            - containerPort: 8000

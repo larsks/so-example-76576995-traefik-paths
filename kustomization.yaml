@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:
+  app: traefik-example
+resources:
+- deployment/hermes.yaml
+- deployment/api-server.yaml
+- deployment/theia.yaml
+- service/hermes.yaml
+- service/api-server.yaml
+- service/theia.yaml
+- ingress.yaml
