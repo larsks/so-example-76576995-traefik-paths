@@ -10,3 +10,4 @@ resources:
 - service/api-server.yaml
 - service/theia.yaml
 - ingress.yaml
+- middleware/add-trailing-slash.yaml

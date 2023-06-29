@@ -1,0 +1,9 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: add-trailing-slash
+spec:
+  redirectRegex:
+    permanent: true
+    regex: "^https?://(.*)/(hermes[23]?)$"
+    replacement: "/${2}/"

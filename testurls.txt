@@ -1,0 +1,12 @@
+http://dev.mywebsite.io/api-server
+http://dev.mywebsite.io/
+http://dev.mywebsite.io/hermes
+http://dev.mywebsite.io/hermes/
+http://dev.mywebsite.io/hermes2
+http://dev.mywebsite.io/hermes2/
+http://dev.mywebsite.io/hermes2/foo
+http://dev.mywebsite.io/hermes3
+http://dev.mywebsite.io/hermes3/
+http://dev.mywebsite.io/hermes3/foo
+http://dev.mywebsite.io/hermes113
+http://dev.mywebsite.io/hermes_was_a_dog
