@@ -11,3 +11,4 @@ resources:
 - service/theia.yaml
 - ingress.yaml
 - middleware/add-trailing-slash.yaml
+- middleware/strip-prefix.yaml

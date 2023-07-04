@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: traefik-ingress
   annotations:
-    traefik.ingress.kubernetes.io/router.middlewares: example-add-trailing-slash@kubernetescrd
+    traefik.ingress.kubernetes.io/router.middlewares: example-add-trailing-slash@kubernetescrd,example-strip-prefix@kubernetescrd
 spec:
   ingressClassName: traefik
   rules:
@@ -17,21 +17,21 @@ spec:
                 name: api-server-svc
                 port:
                   number: 8082
-          - path: /hermes/
-            pathType: Exact
+          - path: /hermes
+            pathType: Prefix
             backend:
               service:
                 name: hermes-svc
                 port:
                   number: 8000
-          - path: /hermes2/
-            pathType: Exact
+          - path: /hermes2
+            pathType: Prefix
             backend:
               service:
                 name: hermes-svc
                 port:
                   number: 8000
-          - path: /hermes3/
+          - path: /hermes3
             pathType: Prefix
             backend:
               service:

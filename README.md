@@ -34,19 +34,26 @@ The [`tests/`](tests/) directory contains a simple test implemented using [pytes
 This should result in:
 
 ```
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/api-server-api-server] PASSED              [  7%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/-theia] PASSED                             [ 15%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes-hermes] PASSED                      [ 23%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes/-hermes] PASSED                     [ 30%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes/foo-theia] PASSED                   [ 38%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2-hermes] PASSED                     [ 46%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2/-hermes] PASSED                    [ 53%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2/foo-theia] PASSED                  [ 61%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3-hermes] PASSED                     [ 69%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3/-hermes] PASSED                    [ 76%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3/foo-hermes] PASSED                 [ 84%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes113-theia] PASSED                    [ 92%]
-tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes_was_a_dog-theia] PASSED             [100%]
+============================= test session starts ==============================
+platform linux -- Python 3.11.4, pytest-7.2.2, pluggy-1.0.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/lars/projects/kubework/traefik-middlewares
+collecting ... collected 12 items
+
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/api-server-api-server-/] PASSED [  8%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/api-server/a/b/c-api-server-/a/b/c] PASSED [ 16%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/-theia-/] PASSED   [ 25%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes-hermes-/] PASSED [ 33%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes/-hermes-/] PASSED [ 41%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes/a/b/c-hermes-/a/b/c] PASSED [ 50%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2-hermes-/] PASSED [ 58%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2/-hermes-/] PASSED [ 66%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes2/a/b/c-hermes-/a/b/c] PASSED [ 75%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3-hermes-/] PASSED [ 83%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3/-hermes-/] PASSED [ 91%]
+tests/test_urls.py::test_urls[http://dev.mywebsite.io/hermes3/a/b/c-hermes-/a/b/c] PASSED [100%]
+
+============================== 12 passed in 0.08s ==============================
 ```
 
 [pytest]: https://docs.pytest.org/
